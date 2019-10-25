@@ -6,7 +6,7 @@ const isProd = process.env.NODE_ENV === 'production';
 const middlewareList = [];
 middlewareList.push(thunk);
 
-if (!isprod) {
+if (!isProd) {
 	middlewareList.push(createLogger());
 }
 
