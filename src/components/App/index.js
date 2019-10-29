@@ -1,8 +1,22 @@
 import React from 'react';
+import {ThemeProvider} from 'styled-components';
+import { colorsDark } from 'styles/palette';
+import { Wrapper, Title } from './style';
+// import List from 'components/List';
 
 function App() {
   return (
-    <h1>Welcome!</h1>
+    <ThemeProvider theme={colorsDark}>
+      <div>
+        <Wrapper>
+          <Title>
+            Emoticon Index
+          </Title>
+          {/* <List/> */}
+        </Wrapper>
+      </div>
+    </ThemeProvider>
+
   );
 }
 
