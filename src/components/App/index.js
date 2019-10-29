@@ -1,8 +1,8 @@
 import React from 'react';
 import {ThemeProvider} from 'styled-components';
 import { colorsDark } from 'styles/palette';
-import { Wrapper, Title } from './style';
-// import List from 'components/List';
+import { Wrapper, Title } from './styles';
+import List from 'components/List';
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
           <Title>
             Emoticon Index
           </Title>
-          {/* <List/> */}
+          <List/>
         </Wrapper>
       </div>
     </ThemeProvider>
